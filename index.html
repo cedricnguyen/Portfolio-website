@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name= "description" content= "identité numérique" />
+        <meta name= "keywords" content= "SAE ,HTML, CSS, Javascript ,IUT de Villetaneuse, BUT" />
+        <meta name= "name" content= "Cédric NGUYEN, auto-entrepreneur et étudiant à l'IUT de Villetaneuse" />
+        <title>NGUYEN Cédric</title>    
+        <link rel= "stylesheet" type= "text/css" media= "screen" href= "stylesheet.css" />          <!-- BOOTSTRAP CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="jvscript.js"></script>
+    </head>
+    <body>
+
+<!-- ACCUEIL -->
+    <div id="fond">
+        <nav>
+            <ul>
+                <img class="home" src="images/freepikhome.png" alt="Source : Freepik" href="javascript:void(0);" onclick="scrollToSection('fond')">
+                <li><a class="menu" href="javascript:void(0);" onclick="scrollToSection('presentation')">Présentation</a></li>
+                <li><a class="menu" href="javascript:void(0);" onclick="scrollToSection('competences')">Compétences</a></li>
+                <li><a class="menu" href="javascript:void(0);" onclick="scrollToSection('experiences')">Expériences</a></li>
+                <li><a class="menu" href="javascript:void(0);" onclick="scrollToSection('projets')">Projets</a></li>
+                <li><a class="menu" href="javascript:void(0);" onclick="scrollToSection('mecontacter')">Me contacter</a></li>
+            </ul>
+        </nav>
+        <div>
+            <p id="titre">Cédric NGUYEN</p> 
+            <p id="soustitre">Futur Ingénieur en Sécurité & Réseaux</p> 
+            <p id="soustitre2">Recherche d'alternance pour Septembre 2024</p> 
+        </div>
+        <img id="arrow" src="images/arrow.png" alt="Source : Freepik" href="javascript:void(0);" onclick="scrollToSection('presentation')">
+    </div>
+
+    
+
+<!-- PRESENTATION -->
+        <div id="presentation" class="accueil">
+            <div>       
+                <h1 class="titre">Présentation</h1>
+                <div class="miniligne"></div>
+                <div>
+                    <img id="maphoto" src="images/CV.png">
+                    <div id="profil">
+                        <div>
+                            <img class="img" src="images/Maxim Basinki.png" alt="Source : Maxim Basinki">
+                            <p class="txt">Je m'appelle Cédric NGUYEN, je suis à la fois étudiant en première année de</br> <span class="motcle">BUT Réseaux & Télécoms</span> et <span class="motcle">auto-entrepreneur</span> dans le commerce en ligne et le marketing digital.</p>
+                        </div>
+                        <div>
+                            <img class="img" src="images/Muhammad_Usman.png" alt="Source : Muhammad Usman">
+                            <p class="txt">Passionné d'informatique, de sport et d'audiovisuel,</br> je m'investis également en tant qu'investisseur dans le marché des actions et les cryptomonnaies.</p>
+                        </div>
+                        <div>
+                            <img class="img" src="images/freepikhat.png" alt="Source : Freepik">
+                            <p class="txt">Mon projet est de décrocher un <span class="motcle">diplôme d'ingénieur</span> spécialisé dans <span class="motcle">la sécurité et les réseaux</span>.</p>
+                        </div>
+                        <div>
+                            <img id="timeline" src="images/timeline.png">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a class="bouton" href="CV/CV.pdf">Télécharger mon CV</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="line">“La création de nouvelles technologies passe forcément par la sécurisation avant la commercialisation” - Gartner Inc.</div>
+
+
+
+
+<!-- COMPETENCES --> 
+        <div id="competences" class="section">
+            <div id="blocs">
+                <h1 class="titre">Compétences</h1>
+                <div class="miniligne"></div>
+                <div id="c1" class="colonne">
+                    <div class="competence">
+                        <h3>Langages de programmation :</h3>
+                        <p><img class="logo" src="images/python.png"><span>Python</span><span class="progress-bar"><span class="progress-bar-inner" style="width: 100%;"></span></span></p>
+                        <p><img class="logo" src="images/html.png"><span>Html</span><span class="progress-bar"><span class="progress-bar-inner" style="width: 90%;"></span></span></p>
+                        <p><img class="logo" src="images/css.png"><span>CSS</span><span class="progress-bar"><span class="progress-bar-inner" style="width: 90%;"></span></span></p>
+                        <p><img class="logo" src="images/sql.png"><span>SQL</span><span class="progress-bar"><span class="progress-bar-inner" style="width: 70%;"></span></span></p>
+                        <p><img class="logo" src="images/javascript.png"><span>JavaScript</span><span class="progress-bar"><span class="progress-bar-inner" style="width: 50%;"></span></span></p>
+                        <p><img class="logo" src="images/php.png"><span>PHP</span><span class="progress-bar"><span class="progress-bar-inner" style="width: 20%;"></span></span></p>
+                        <p><img class="logo" src="images/c++.png"><span>C++</span><span class="progress-bar"><span class="progress-bar-inner" style="width: 20%;"></span></span></p>
+                    </div>
+                    <div id="langues" class="competence">
+                        <h3>Langues :</h3>
+                        <p><img class="logo" src="images/france.png"><span>Français</span><span class="progress-bar"><span class="progress-bar-inner" style="width: 100%;"></span></span></p>
+                        <p><img class="logo" src="images/anglais.png"><span>Anglais</span><span class="progress-bar"><span class="progress-bar-inner" style="width: 90%;"></span></span></p>
+                        <p><img class="logo" src="images/vietnam.png"><span>Vietnamien</span><span class="progress-bar"><span class="progress-bar-inner" style="width: 90%;"></span></span></p>
+                        <p><img class="logo" src="images/allemagne.png"><span>Allemand</span><span class="progress-bar"><span class="progress-bar-inner" style="width: 50%;"></span></span></p>
+                    </div>
+                </div>
+                <div id="c2" class="colonne">
+                    <div id="comptech" class="competence">
+                        <h3>Administrer les réseaux et l'internet :</h3>
+                        <p><img class="logo" src="images/eucalyp.png" alt="Source : Eucalyp"><span>Principe et architectures des réseaux</span><span class="progress-bar"><span class="progress-bar-inner" style="width: 90%;"></span></span></p>
+                        <p><img class="logo" src="images/eucalyp1.png" alt="Source : Eucalyp"><span>Architectures des systèmes numériques et informatiques</span><span class="progress-bar"><span class="progress-bar-inner" style="width: 90%;"></span></span></p>
+                        <p><img class="logo" src="images/mnauliady.png" alt="Source : Mnauliady"><span>Mathématiques du signal et des transmissions</span><span class="progress-bar"><span class="progress-bar-inner" style="width: 90%;"></span></span></p>
+                        <p><img class="logo" src="images/freepik1.png" alt="Source : Freepik"> <span>Support de transmission et systèmes électroniques</span><span class="progress-bar"><span class="progress-bar-inner" style="width: 80%;"></span></span></p>
+                    </div>
+                    <div class="competence">
+                        <h3>Outils :</h3>
+                        <p><img class="logo" src="images/VsCode.png"><span>VS Code</span><span class="progress-bar"><span class="progress-bar-inner" style="width: 95%;"></span></span></p>
+                        <p><img class="logo" src="images/Spyder.png"><span>Spyder</span><span class="progress-bar"><span class="progress-bar-inner" style="width: 95%;"></span></span></p>
+                        <p><img class="logo" src="images/linux.png"><span>Linux</span><span class="progress-bar"><span class="progress-bar-inner" style="width: 80%;"></span></span></p>
+                        <p><img class="logo" src="images/Marionnet.png"><span>Marionnet</span><span class="progress-bar"><span class="progress-bar-inner" style="width: 80%;"></span></span></p>
+                        <p><img class="logo" src="images/vegas.png"><span>Vegas Pro</span><span class="progress-bar"><span class="progress-bar-inner" style="width: 100%;"></span></span></p>
+                        <p><img class="logo" src="images/photoshop.png"><span>Photoshop</span><span class="progress-bar"><span class="progress-bar-inner" style="width: 100%;"></span></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+
+        <div class="line2">"La cybersécurité est bien plus qu'une simple question technique. C'est une question de défense de notre futur."</br>- Agence nationale de la sécurité des systèmes d'information (ANSSI)</div>
+
+<!-- EXPERIENCE -->
+
+        <div id="experiences" class="section">
+            <div id="exp">
+                <h1 class="titre">Expériences</h1>
+                <div class="miniligne"></div>
+                <p class="clique">Cliquer pour en savoir plus !</p>
+
+                <div id="img1">
+                    <button class="d-block mt-5 btn btn-primary mx-auto transparent-btn" data-bs-toggle="modal" data-bs-target="#modal1"><img class="imgexppjt" src="images/freepikbusiness.jpg" alt="Source : Freepik"></button>
+                    <p class="txtexppjt">Auto-entrepreneur</p>
+                    <div class="modal fade" id="modal1">
+                        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                            <div id="taille" class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" aria-labelledby="modal title">Envolve</h5>
+                                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body" aria-describedby="content">
+                                    <h4>Le début d'une aventure</h4>                                
+                                    <p>En février 2023, dès que j'ai atteint l'âge de 18 ans, j'ai pris l'initiative de devenir auto-entrepreneur. C'est ainsi qu'est née Envolve. 
+                                        Cette décision a été motivée par la réalité financière de ma famille, qui n'est pas particulièrement aisée. 
+                                        Mon objectif premier en entreprenant cette démarche est de fournir à ma famille une stabilité financière et de prendre en charge toutes les responsabilités économiques, 
+                                        permettant ainsi à mes proches de ne plus avoir à travailler. 
+                                        Je veux simplement assurer à ma famille une vie sereine et paisible.</p>
+                                    <h4>L'apprentissage</h4> 
+                                    <p>J'ai débuté mon parcours en vendant sur Amazon. Pour cela, j'ai dû m'immerger dans l'étude du marché, 
+                                        explorer différentes niches pour dénicher un produit à succès aligné sur ma stratégie de vente. 
+                                        Cette démarche m'a permis de développer des compétences en recherche de marché et d'identifier les besoins des clients. 
+                                        J'ai également pu mettre à profit mes compétences en montage vidéo et en graphisme, acquises au fil d'une décennie de pratique. 
+                                        Grâce à cette expérience et à ces compétences, j'ai élargi mon rôle pour devenir agent commercial sur Amazon. 
+                                        Cela me permet de partager mes connaissances avec les nouveaux venus dans le domaine, en les conseillant sur le choix du produit idéal, 
+                                        en les guidant pour augmenter leur taux de conversion, et en les assistant dans la création d'images et de vidéos attractives pour leurs produits.</p>  
+                                        <img class="imgmodal" src="images/lapin.png" alt="Source : Cédric NGUYEN">
+                                        <img class="imgmodal" src="images/lapin1.png" alt="Source : Cédric NGUYEN">
+                                        <img class="imgmodal" src="images/lapin2.png" alt="Source : Cédric NGUYEN">
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="img2">
+                    <button class="d-block mt-5 btn btn-primary mx-auto transparent-btn" data-bs-toggle="modal" data-bs-target="#modal2"><img class="imgexppjt" src="images/ccas.png" alt="Source : CCAS"></button>
+                    <p class="txtexppjt">Stagiaire</p>
+                    <div class="modal fade" id="modal2">
+                        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" aria-labelledby="modal title">Stage</h5>
+                                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body" aria-describedby="content">                                  
+                                    <h4>Où ai-je fait mon stage ?</h4>
+                                    <p>Au cours de ma 3e au collège, en janvier 2020, j'ai effectué un stage d'une semaine à la Caisse Centrale des Activités Sociales à Montreuil (CCAS), 
+                                        au sein du département informatique. Cette expérience a suscité en moi une réelle aspiration à évoluer dans ce domaine, 
+                                        plus particulièrement dans le secteur de la cybersécurité. C'est grâce à une équipe passionnée par leur travail que j'ai été véritablement inspiré, 
+                                        et ils ont su me transmettre cette même passion.</p>
+                                    <h4>Qu'ai-je fait pendant mon stage ?</h4>
+                                    <p>J'ai eu l'opportunité d'explorer différentes branches de l'informatique, telles que la cybersécurité, la maintenance des réseaux, 
+                                        le développement d'applications, la gestion de stockage et la gestion de bases de données. Durant cette expérience, 
+                                        j'ai pu observer de près le travail de professionnels, comprendre leur rôle au sein de l'entreprise, et appréhender leur manière de collaborer en équipe. 
+                                        C'est ainsi que j'ai pris conscience de la diversité du monde de l'informatique, de l'importance cruciale de la technologie dans notre avenir, et de mon désir de travailler dans ce domaine.</p>
+                                        <img src="images/ccas.png" class="imgmodal" alt="Source : CCAS">
+                                        <img src="images/montreuil.jpg" class="imgmodal" alt="Source : Google Map">    
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+
+<!-- PROJETS REALISES -->
+        <div id="projets" class="section">
+            <div id="projet">
+                <h1 class="titre">Projets clés réalisés</h1>
+                <div class="miniligne"></div>
+                <p class="clique">Cliquer pour en savoir plus !</p>
+
+                <div id="img1">
+                    <div class="pjt1">
+                        <button class="d-block mt-5 btn btn-primary mx-auto transparent-btn" data-bs-toggle="modal" data-bs-target="#modal3"><img class="imgexppjt" src="images/tankinator.png" alt="Source : Cédric NGUYEN"></button>
+                        <p class="txtexppjt">Jeu vidéo indépendant</p>
+                        <div class="modal fade" id="modal3">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" aria-labelledby="modal title">Tankinator</h5>
+                                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+    
+                                    <div class="modal-body" aria-describedby="content">                                  
+                                        <h4>Qu'est-ce que Tankinator ?</h4>
+                                        <p>Tankinator est un jeu en 2D dont l'objectif est de détruire un ou plusieurs tanks adverses automatisés par le programme. Le jeu propose un système d'inventaire et d'économie, 
+                                            où la réussite d'un "niveau" permet de gagner une somme d'argent proportionnelle à la difficulté. 
+                                            Cette monnaie virtuelle peut être utilisée pour améliorer notre tank, facilitant ainsi la progression à travers les niveaux.</p>
+                                        <h4>Objectifs du projet</h4>
+                                        <p>En Terminale en 2022, j'ai participé à un projet de développement de jeu vidéo en Python, réalisé en collaboration avec trois autres étudiants. 
+                                            L'objectif principal de cette initiative était de nous familiariser avec la Programmation Orientée Objet (POO) en utilisant des classes et des méthodes dans le langage Python. 
+                                            Ce projet m'a permis d'approfondir mes compétences en programmation, tout en développant ma communication, mon esprit d'équipe, mon autonomie, 
+                                            et en acquérant des compétences en gestion de projet. Grâce à une collaboration efficace, 
+                                            nous avons obtenu la note parfaite de 20/20, répondant ainsi à tous les critères d'évaluation prévus.</p>
+                                            <img class="imgmodal" src="images/tank.png" alt="Source : Cédric NGUYEN">
+                                            <img class="imgmodal" src="images/tank1.png" alt="Source : Cédric NGUYEN">     
+                                    </div>
+    
+                                    <div class="modal-footer">
+                                        <button class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pjt2">
+                        <button class="d-block mt-5 btn btn-primary mx-auto transparent-btn" data-bs-toggle="modal" data-bs-target="#modal4"><img class="imgexppjt" src="images/spider.PNG" alt="Source : IA"></button>
+                        <p class="txtexppjt">Simulation de lancement de start-up</p>
+                        <div class="modal fade" id="modal4">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" aria-labelledby="modal title">Spider Drones</h5>
+                                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+    
+                                    <div class="modal-body" aria-describedby="content">                                       
+                                        <h4>Que sont les Spider Drones ?</h4>
+                                        <p>Les Spider Drones, dotés d'une Intelligence Artificielle avancée, sont  
+                                            conçus pour opérer dans des environnements inaccessibles. Ces drones fonctionnent en essaim et 
+                                            utilisent des capteurs multispectraux pour analyser en temps réel l'état des câbles de transmission. 
+                                            Leurs capteurs détectent des anomalies imperceptibles à l'œil nu, et grâce à une Intelligence Artificielle préalablement formée sur divers scénarios de défaillance, 
+                                            les drones peuvent réagir instantanément en déclenchant des actions automatisées, allant de l'ajustement de leur trajectoire à des réparations autonomes. 
+                                            Leur capacité à naviguer aussi bien dans les airs que sous l'eau, combinée à une analyse précise des fréquences lumineuses, 
+                                            en fait des outils qui peuvent être vitaux pour la maintenance télécom, réduisant les coûts opérationnels, accélérant les réparations, 
+                                            et assurant une connectivité stable, surtout dans des conditions extrêmes.</p>
+                                        <h4>Objectifs du projet</h4>
+                                        <p>Dans ce projet de ma première année en BUT Réseaux & Télécoms, nous avons plongé dans la simulation stimulante du lancement d'une start-up. 
+                                            Notre mission consistait à élaborer un rapport détaillé décrivant notre projet, avec des concepts comme le WBS, l'OBS, le CDC, 
+                                            et à créer des diagrammes de GANTT/PERT, et encore. Ensuite, nous avons travaillé sur un discours convaincant pour séduire d'éventuels investisseurs. 
+                                            À la suite de longues discussions, mes camarades m'ont désigné comme chef de projet. 
+                                            Cette responsabilité m'a poussé à mobiliser mes compétences en leadership, en gestion, en communication, 
+                                            et en adaptation pour mener le projet à bien. D'autant plus que, étant en début d'année, nous nous découvrions à peine, 
+                                            chacun apportant des compétences variées à ce travail.</p>
+                                            <img class="imgmodal" src="images/spider.PNG" alt="Source : IA">                         
+                                    </div>
+    
+                                    <div class="modal-footer">
+                                        <button class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="img2">
+                    <div class="pjt1">
+                        <button class="d-block mt-5 btn btn-primary mx-auto transparent-btn" data-bs-toggle="modal" data-bs-target="#modal5"><img class="imgexppjt" src="images/animation.PNG" alt="Source : Cédric NGUYEN"></button>
+                        <p class="txtexppjt">Vidéo d'animation de sensibilisation à la cybersécurité</p>
+                        <div class="modal fade" id="modal5">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" aria-labelledby="modal title">Empêcher un hacker d'accéder à son compte</h5>
+                                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+    
+                                    <div class="modal-body" aria-describedby="content">                                   
+                                        <h4>Mots de passe et Phishing</h4>
+                                        <p>Pour garantir sa sécurité en ligne, il est crucial de restreindre l'accès à son compte personnel. 
+                                            L'utilisation d'un mot de passe robuste s'avère essentielle pour prévenir tout vol de compte. 
+                                            De plus, il est impératif de se familiariser avec diverses techniques de vol et d'usurpation d'identité, 
+                                            telles que le phishing par le biais de SMS ou de courriels électroniques, afin de les reconnaître et de les éviter.</p>
+                                        <h4>Objectifs du projet</h4>
+                                        <p>L'objectif de ce projet était de créer une vidéo de sensibilisation à la cybersécurité en binôme, 
+                                            d'une durée inférieure à 3 minutes. Nous devions choisir un thème, le traiter en utilisant nos connaissances, 
+                                            des ressources en ligne et des documents fournis par des entités telles que l'ANSSI ou CyberMalVeillance. 
+                                            Notre choix s'est porté sur la protection des comptes en ligne, présentée sous la forme d'une vidéo d'animation 2D humoristique. 
+                                            Ce projet nous a permis d'acquérir des compétences en recherche d'information, en rédaction de scénarios et en montage vidéo, 
+                                            tout en renforçant notre compréhension des bonnes pratiques de sécurité sur Internet.</p>    
+                                            <img class="imgmodal" src="images/animation1.PNG" alt="Source : Cédric NGUYEN">
+                                            <img class="imgmodal" src="images/animation2.PNG" alt="Source : Cédric NGUYEN">
+                                            <img class="imgmodal" src="images/animation3.PNG" alt="Source : Cédric NGUYEN">
+                                    </div>
+    
+                                    <div class="modal-footer">
+                                        <button class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pjt2">
+                        <button class="d-block mt-5 btn btn-primary mx-auto transparent-btn" data-bs-toggle="modal" data-bs-target="#modal6"><img class="imgexppjt" src="images/sfr.PNG" alt="Source : Cédric NGUYEN"></button>
+                        <p class="txtexppjt">Site internet</p>
+                        <div class="modal fade" id="modal6">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" aria-labelledby="modal title">Safari</h5>
+                                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+    
+                                    <div class="modal-body" aria-describedby="content">                                     
+                                        <h4>Site du Safari</h4>
+                                        <p>Ce projet représente mon tout premier site internet, conçu sur une période de trois mois en 2021 pendant ma première année de lycée. 
+                                            Il présente mon groupe d'amis baptisé "Le Safari". Le site propose une vue d'ensemble des membres du groupe, retrace nos rencontres et dévoile nos activités communes. 
+                                            Son objectif premier était de montrer notre sympathie et d'encourager d'autres camarades à se joindre à nous.
+                                        </p> 
+                                        <h4>Objectifs du projet</h4>
+                                        <p>Comme vous pouvez le remarquer, mon tout premier site n'a rien à envier à celui que vous parcourez actuellement. 
+                                            Lors de ce projet, j'avais récemment acquis des compétences en HTML, CSS et JavaScript. Avec le temps, j'ai accumulé de l'expérience, 
+                                            perfectionnant ainsi mes compétences en codage web et apprenant à moderniser les pages internet pour suivre les normes actuelles. 
+                                            Cela démontre ma capacité à évoluer et à continuer de progresser.</p> 
+                                        <img class="imgmodal" src="images/sfr.PNG" alt="Source : Cédric NGUYEN">
+                                        <img class="imgmodal" src="images/sfr1.PNG" alt="Source : Cédric NGUYEN">
+                                    </div>
+    
+                                    <div class="modal-footer">
+                                        <button class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      
+
+<!-- ME CONTACTER --> 
+        <div id="mecontacter" class="section">
+            <div id="contact">
+                <p id="Tcontact">Me Contacter</p>
+                <div class="miniligne"></div>
+                <p id="contxt">N'hésitez pas à utiliser ce formulaire ou mon <a href="">LinkedIn</a> pour prendre contact avec moi !</p>
+                <form action="formulaire.php" method="post">
+                    <div>
+                        <label>Nom</label>
+                        <input type="text" placeholder="Votre nom" required>
+                    </div>
+                    <div>
+                        <label>Prénom</label>
+                        <input type="text" placeholder="Votre prénom" required>
+                    </div>
+                    <div>
+                        <label>Adresse Email</label>
+                        <input type="email" placeholder="Votre adresse e-mail" required>
+                    </div>
+                    <div>
+                        <label>Message</label>
+                        <textarea placeholder="Votre message" required></textarea>
+                        <button id="send" type="submit">Envoyer mon message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+<!-- PIED DE PAGE -->
+            <footer>
+                <div>
+                    <h2>Contact</h2>
+                    <a href="https://www.linkedin.com/in/cédric-nguyen"><img id="icon" src="images/linkedin.png"></a>
+                    <p class="foottxt">Email : Cedn2005[arobase]gmail.com</p>
+                    <p class="foottxt">Téléphone : +33 7 68 33 69 26</p>
+                </div>
+
+                <div id="copyright">
+                    <p>Cédric NGUYEN | Etudiant & Auto-entrepreneur © 2023</p>
+                </div>
+            </footer>
+
+
+<!-- BOOTSTRAP JavaScript -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>       
+    </body>
+</html>

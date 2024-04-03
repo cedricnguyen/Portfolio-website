@@ -1,0 +1,604 @@
+@font-face {
+    font-family: 'Dosis';
+    src: url('font/Dosis-SemiBold.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overscroll-behavior: none;
+}
+
+.titre {
+    text-align: center;
+    font-family: 'Dosis';
+    font-size: 4vw;
+    text-transform: uppercase;
+}
+
+.section {
+    height: 80vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.accueil {
+    height: 100vh; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home {
+    float: left;
+    height: 3.5vh;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    margin-left: 1vw;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;;
+}
+
+.home:hover {
+    transform: scale(1.1);
+}
+
+.miniligne{
+    height: .5vh;
+    width: 10vw;
+    background-color:#529cfa;
+    margin: 0 auto;
+}
+
+
+/* ACCUEIL */
+
+nav {
+    background-color: transparent;
+    overflow: hidden;   
+    text-align: right;
+    position: fixed;
+    top : 0;
+    width: 100%;
+    z-index: 1;
+    transition: background-color 0.5s ease; 
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-right: 2vw;
+}
+
+li {
+    display: inline-block;   
+}
+
+#fond {
+    background-image: url('images/ACCUEIL\ FOND.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#titre {
+    text-align: center;
+    text-transform: uppercase; 
+    margin-top: 70vh;
+    margin-bottom: 0;
+    font-size: 5vw;
+    font-family: 'Dosis';
+    color: #529cfa;
+    transform: scale(1);
+    transition: transform .3s ease;
+}
+#titre:hover{
+    transform: scale(1.1);
+}
+
+#soustitre {
+    text-align: center;
+    margin-top: 0;
+    font-size: 2vw;
+    font-family: 'Dosis';
+    color: white;
+    transform: scale(1);
+    transition: transform .3s ease;
+}
+#soustitre:hover{
+    transform: scale(1.1);
+}
+
+#soustitre2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 65vh;
+    font-size: 1vw;
+    font-family: 'Dosis';
+    color: white;
+    transform: scale(1);
+    transition: transform .3s ease;
+}
+#soustitre2:hover{
+    transform: scale(1.1);
+}
+
+.menu {
+    display: block;
+    color: white;
+    text-align: center;
+    padding-top: 2vh;
+    padding-left: 2vw;
+    text-decoration: none;  
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+    font-size: 2vh;
+}
+
+.menu:hover{
+    color:lightgray;
+    transition: background-color 0.3s ease;
+}
+
+/* Animation flèche haut/bas */
+@keyframes arrowAnimation {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(5vh); 
+    }
+}
+
+#arrow {
+    position: absolute;
+    margin-bottom: 5vh;
+    height: 10vh;
+    width:auto;
+    bottom: 0;
+    transform: translateX(-50%); /* Centre la flèche */
+    animation: arrowAnimation 2s infinite; 
+}
+
+
+
+/* PRESENTATION */
+
+#presentation{
+    margin-top: 5vh;
+}
+
+#maphoto {
+    max-width: 15vw;
+    height: auto;    
+    margin-left : 13vw;
+    border-radius: 20px; 
+    margin-top: 1cm;
+    transform: scale(1);
+    transition: transform .3s ease;
+}
+#maphoto:hover {
+    transform: scale(1.1);
+}
+
+#profil {
+    float: right;
+    margin-right: 17vw;
+    margin-top: 5vh;
+    font-family: 'Dosis';
+    font-size: 1vw;
+}
+
+.txt {
+    margin-bottom: 2vh;
+}
+
+.img {
+    margin-top: 1vh;
+    margin-right:10vh;
+    float: left;
+    max-height: 6vh;
+    width: auto;
+}
+
+.bouton {
+    margin: 30px;
+    display: inline-block;
+    padding: 2vh 5.9vh;
+    background-color:#529cfa; 
+    color: #fff; 
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Dosis';
+    font-size: 1.2vw;
+    margin-left: 25vh;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.bouton:hover {
+    transform: scale(1.1);
+}
+
+#timeline {
+    float: right;
+    margin-top: 1vh;
+    height: 50vh;
+    width: auto;
+}
+
+.motcle {
+    color: #529cfa;
+}
+
+.line {
+    background-image: url('images/pikisuperstar.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 100%;
+    font-family: 'Dosis';
+    color: white;
+    font-size: 1.75vw;
+}
+
+
+/* COMPETENCES */
+#competences{
+    margin-bottom: 20vh;
+}
+
+.competence {
+    display: inline-block;
+    width: 22vw;
+    margin: 3vh;
+    padding: 1vh;
+    box-sizing: border-box;
+    background-color: #172b5e;
+    font-family: 'Dosis';
+    color: white;
+    font-size: 1vw;
+    border-radius: 20px;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.competence:hover {
+    transform: scale(1.1);
+}
+
+
+.colonne{
+    display: flex;
+    flex-direction: column;
+}
+
+#c1{
+    margin-left: 20vh;
+    float: left;
+}
+
+#c2{
+    float: right;
+}
+
+.competence p {
+    display: flex;
+    align-items: center;
+}
+
+#comptech{
+    width:80vh;
+}
+
+#langues{
+    height: 25vh;
+}
+
+.logo {
+    max-width: 3.5vh; 
+    margin-left: 1vh;
+    margin-right: 2vh;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    display: flex;
+    margin-left: auto;
+    margin-right: 2vh;
+    width: 22vh;
+    height: 1vh;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.progress-bar-inner {
+    height: 100%;
+    width: 0;
+    background-color: #84b9ff; 
+    border-radius: 8px;
+    transition: width 0.3s ease-in-out; 
+}
+
+h3 {
+    margin-left:1vw;
+}
+
+#blocs {
+    margin-top: 25vh;
+}
+
+.line2 {
+    background-image: url('images/pikisuperstar.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 100%;
+    margin-top:25vh;
+    font-family: 'Dosis';
+    color: white;
+    font-size: 1.75vw;
+    text-align: center;
+}
+
+
+/* EXPERIENCES & PROJETS */
+
+.transparent-btn{
+    background-color: transparent !important;   /* !important pour mettre la priorité de ça par rapport à bootstrap */
+    border: none !important;
+}
+
+.transparent-btn:focus,
+.transparent-btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.modal-body{
+    font-family: 'Dosis';
+}
+
+.modal-dialog{
+    max-width: 70% !important;
+}
+
+.imgexppjt {
+    height: 30vh;
+    width: auto;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.imgexppjt:hover {
+    transform: scale(1.1);
+}
+
+.txtexppjt {
+    font-family: 'Dosis';
+    font-size: 1.3vw;
+    text-align: center;
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+}
+
+.clique{
+    font-family: 'Dosis';
+    font-size: 1.5vw;
+    margin-bottom: 5vh;
+    margin-top: 0vh;
+    text-align: center;
+}
+
+.imgmodal{
+    height:30vh;
+    width: auto;
+    border-radius: 10px;
+    padding: 2vh;
+}
+
+.modal-body > p {
+    font-size: 1vw;
+}
+
+h5{
+    font-family: 'Dosis';
+    font-size: 2vw !important;
+}
+
+#img1 {
+    float: left;
+    margin-right: 8vh;
+    position: relative;
+}
+
+#img2 {
+    float: right;
+    margin-left: 8vh;
+    position: relative;
+}
+
+#exp {
+    margin-top: 0vh;
+}
+
+#exp > h1 {
+    margin-bottom: 1vh;
+}
+
+#projets {
+    margin-top: 10vh;
+    margin-bottom: 25vh;
+
+}
+
+#projet{
+    margin-top: 15vh;
+}
+
+#projet > h1 {
+    margin-bottom: 1vh;
+}
+
+/* ME CONTACTER */
+#contxt {
+    text-align: center;
+    font-family: 'Dosis';
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    font-size: 1vw;
+}
+
+#Tcontact {
+    text-align: center;
+    font-family: 'Dosis';
+    font-size: 4vw;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#contact {
+    width: 85vh;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 10vh 10vh 10vh 10vh;
+    background: white;
+    text-align: center; 
+}
+
+#mecontacter {
+    background-image: url('images/feepikbg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    bottom: 0;
+}
+
+label {
+    font-size: 1vw;
+    font-family: 'Dosis';
+    margin-top: 3vh;
+    display: block;
+    float: left;
+    padding-left: 1vw;
+}
+
+#send {
+    width: 40vh;
+    height: 5vh;
+    border: solid 1px;
+    border-radius: 5px;
+    font-family: 'Dosis';
+    font-size: 1.5vw;
+    margin-left: 18vh;
+    transform: scale(1);
+    transition: background-color 0.3s ease, transform .3s;
+}
+
+#send:hover {
+    background-color: lightblue;
+    transform: scale(1.1);
+}
+
+input {
+    height: 5vh;
+    width: 60vh;
+    border-radius: 10px;
+    border: solid 1px;
+    margin-bottom: 2vh; 
+}
+
+input::placeholder, textarea::placeholder {
+    font-family: 'Dosis';
+    color: lightgray;
+    transition: background-color 0.3s ease;
+}
+
+textarea {
+    height: 20vh;
+    width: 60vh;
+    border-radius: 10px;
+    border: solid 1px;
+    margin-bottom: 2vh;
+}
+
+#send{
+    width: 40vh;
+    height: 5vh;
+    border: solid 1px;
+    border-radius: 5px;
+    font-family: 'Dosis';
+    font-size: 1.5vw;
+    margin-left: 1vh;
+    margin-top: 3vh; 
+}
+
+/* PIED DE PAGE */
+
+footer {
+    margin-top: 0;
+    height: 30vh;
+    width: 100%;
+    background-color:#131e3a;
+    text-align: center;
+    font-family: 'Dosis';
+}
+
+h2 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 2vw;
+    margin-top: 0;
+    padding-top: 2vh;
+}
+
+#icon {
+    height: 8vh;
+    width: 8vh;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+#icon:hover{
+    transform: scale(1.1);
+}
+
+#copyright {
+    font-size: 1.1vw;
+    color:#8f9296;
+    opacity: 40%;
+}
+
+.foottxt {
+    color: white;
+    font-size: 1.2vw;
+}
